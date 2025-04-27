@@ -1,0 +1,52 @@
+version: "3.8"
+services:
+  upload_service:
+    container_name: upload_service
+    ports:
+      - "3000:3000"
+    build:
+      context: ./upload_service
+      dockerfile: Dockerfile
+    environment:
+      - ACCESS_KEY_ID=
+      - SECRET_ACCESS_KEY=
+
+  redis:
+    container_name: local_redis
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+
+  deploy_service:
+    container_name: deploy_service
+    build:
+      context: ./deploy_service
+      dockerfile: Dockerfile
+    environment:
+      - ACCESS_KEY_ID=
+      - SECRET_ACCESS_KEY=
+
+
+  request_service:
+    container_name: request_service
+    build:
+      context: ./request_service
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - ACCESS_KEY_ID=
+      - SECRET_ACCESS_KEY=
+
+
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./project
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+
+      
