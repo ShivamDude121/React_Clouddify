@@ -71,6 +71,13 @@ git clone of it
  
  ``` cd React_Clouddify ```
 
+ add your s3 secrets to to environment variables docker compose 
+
+ ```
+           - ACCESS_KEY_ID=
+           - SECRET_ACCESS_KEY=
+```
+
  use docker compose up of it
 
  
