@@ -72,7 +72,9 @@ git clone of it
  ``` cd React_Clouddify ```
 
  use docker compose up of it
- ``` docker compose up ```
+
+ 
+ ``` docker compose up  -d```
 
 ## 🤝 Contributing
 
