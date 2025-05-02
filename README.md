@@ -65,11 +65,19 @@ React Cloudify is made of **4 core services**:
 
 git clone of it 
 
- ``` git clone https://github.com/ShivamDude121/React_Clouddify.git ```
+ ```
+
+ git clone https://github.com/ShivamDude121/React_Clouddify.git
+
+```
 
  change directory of it
  
- ``` cd React_Clouddify ```
+ ```
+
+ cd React_Clouddify
+
+ ```
 
  add your s3 secrets to to environment variables docker compose 
 
@@ -81,7 +89,11 @@ git clone of it
  use docker compose up of it
 
  
- ``` docker compose up  -d```
+ ```
+
+ docker compose up  -d
+
+```
 
 ## 🤝 Contributing
 
