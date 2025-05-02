@@ -69,7 +69,19 @@ We'll soon provide full instructions on how to set up and self-host each microse
 
 ## 🤝 Contributing
 
-Want to contribute? Pull requests and feedback are always welcome!
+We welcome contributions from the community! To contribute to Muzer, follow these steps:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature/fooBar).
+
+Make your changes and commit them (git commit -am 'Add some fooBar').
+
+Push to the branch (git push origin -u feature/fooBar).
+
+Create a new Pull Request.
+
+For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
