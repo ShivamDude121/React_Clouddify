@@ -69,7 +69,7 @@ We'll soon provide full instructions on how to set up and self-host each microse
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! To contribute to Muzer, follow these steps:
+We welcome contributions from the community! To contribute to React Cloudify, follow these steps:
 
 Fork the repository.
 
