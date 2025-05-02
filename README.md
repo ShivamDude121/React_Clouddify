@@ -64,8 +64,14 @@ React Cloudify is made of **4 core services**:
 ## 📦 Installation (coming soon)
 
 git clone of it 
+
  ``` git clone https://github.com/ShivamDude121/React_Clouddify.git ```
+
+ change directory of it
+ 
  ``` cd React_Clouddify ```
+
+ use docker compose up of it
  ``` docker compose up ```
 
 ## 🤝 Contributing
