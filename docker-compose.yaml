@@ -8,6 +8,7 @@ services:
       context: ./upload_service
       dockerfile: Dockerfile
     environment:
+
       - ACCESS_KEY_ID=
       - SECRET_ACCESS_KEY=
 
@@ -48,5 +49,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "4000:4000"
+    environment:
+      - IP=localhost
 
       

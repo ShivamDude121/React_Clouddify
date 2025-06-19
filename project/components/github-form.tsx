@@ -10,7 +10,7 @@ import { Loader2, GitBranch, CheckCircle2, Code2, Rocket, Server } from "lucide-
 import { useToast } from "@/hooks/use-toast";
 import axios from "axios";
 
-const BACKEND_UPLOAD_URL = "http://localhost:3000";
+const BACKEND_UPLOAD_URL = `http://${process.env.NEXT_PUBLIC_IP}:3000`;
 
 type DeploymentStep = {
   icon: JSX.Element;
@@ -86,7 +86,7 @@ export function GithubForm() {
       setid(res.data.id);
 
       const repositoryName = githubUrl.split('/').pop() || 'repository';
-      const deploymentUrl = `http://${res.data.id}.react_cloudify.shivam.services:3001/index.html`;
+      const deploymentUrl = `http://${process.env.NEXT_PUBLIC_IP}:3001/index.html?id=${res.data.id}`;
       
 
 

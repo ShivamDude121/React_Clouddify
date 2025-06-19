@@ -1,6 +1,7 @@
 import express from "express";
 import { S3 } from "aws-sdk";
 import path from "path";
+import cookieParser from "cookie-parser";
 
 const s3 = new S3({
     accessKeyId: process.env.ACCESS_KEY_ID,
@@ -8,11 +9,31 @@ const s3 = new S3({
 });
 
 const app = express();
+app.use(cookieParser());
 
 app.get("/*", async (req, res) => {
     const host = req.hostname;
-    const id = host.split(".")[0];
+    let id = req.query.id as string | undefined;
     const filePath = req.path;
+
+    // If id is not present in query, try to get it from cookies
+    if (!id && req.cookies && req.cookies.id) {
+        id = req.cookies.id;
+    }
+
+    // If id is present in query, set it as a cookie for future requests
+    if (req.query.id) {
+        res.cookie("id", req.query.id, { httpOnly: false });
+    }
+
+    if (!id) {
+        res.status(400).send("Missing id parameter");
+        return;
+    }
+
+    // console.log(id);
+    // console.log(filePath);
+
 
     try {
         const s3Key = `dist/${id}${filePath}`;
