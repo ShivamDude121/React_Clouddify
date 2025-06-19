@@ -50,6 +50,6 @@ services:
     ports:
       - "4000:4000"
     environment:
-      - IP=localhost
+      - NEXT_PUBLIC_IP=localhost
 
       
