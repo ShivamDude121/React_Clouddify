@@ -9,7 +9,7 @@ const s3 = new S3({
 // output/asdasd
 export async function downloadS3Folder(prefix: string) {
     const allFiles = await s3.listObjectsV2({
-        Bucket: "cloudshivam",
+        Bucket: "cloudshivam1",
         Prefix: prefix
     }).promise();
     
@@ -27,7 +27,7 @@ export async function downloadS3Folder(prefix: string) {
                 fs.mkdirSync(dirName, { recursive: true });
             }
             s3.getObject({
-                Bucket: "cloudshivam",
+                Bucket: "cloudshivam1",
                 Key
             }).createReadStream().pipe(outputFile).on("finish", () => {
                 resolve("");
@@ -65,7 +65,7 @@ const uploadFile = async (fileName: string, localFilePath: string) => {
     const fileContent = fs.readFileSync(localFilePath);
     const response = await s3.upload({
         Body: fileContent,
-        Bucket: "cloudshivam",
+        Bucket: "cloudshivam1",
         Key: fileName,
     }).promise();
     console.log(response);

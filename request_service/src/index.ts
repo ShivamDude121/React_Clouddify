@@ -38,7 +38,7 @@ app.get("/*", async (req, res) => {
     try {
         const s3Key = `dist/${id}${filePath}`;
         const contents = await s3.getObject({
-            Bucket: "cloudshivam",
+            Bucket: "cloudshivam1",
             Key: s3Key,
         }).promise();
 
