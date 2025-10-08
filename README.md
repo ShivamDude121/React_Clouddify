@@ -122,6 +122,9 @@ MIT License. Use it freely, modify it, and make it your own.
 ## ✨ Demo & Screenshots
 ![Screenshot from 2025-05-02 12-57-49](https://github.com/user-attachments/assets/aecb454e-a189-46c7-b9bb-952a9471d288)
 
+<img width="1796" height="888" alt="image" src="https://github.com/user-attachments/assets/59d4e0d0-c28b-4363-ad3f-f5d7260a0b99" />
+
+
 
 
 
