@@ -121,6 +121,12 @@ MIT License. Use it freely, modify it, and make it your own.
 
 ## ✨ Demo & Screenshots
 ![Screenshot from 2025-05-02 12-57-49](https://github.com/user-attachments/assets/aecb454e-a189-46c7-b9bb-952a9471d288)
+## Working
+[Screencast From 2025-11-05 21-00-28.webm](https://github.com/user-attachments/assets/333b77f2-56c7-4645-88b2-f8213d188299)
+
+
+
+
 
 ## Architecture
 
